@@ -1,0 +1,425 @@
+$main-color: #fff
+$button-and-header-color: #16a085
+$button-hover-color: #15c098
+$paragraph-text-color: #373737
+$bg-color: #f5f6f7
+$bg-store-button-color-bigger: #1abc9c
+$footer-link-hover: #375959
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&subset=latin-ext')
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Lato', sans-serif
+  color: $main-color
+
+.hero
+  background-image: url(../images/first%20bigger.jpg)
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  ul
+    display: flex
+    list-style-type: none
+    margin: 0
+    padding: 0
+    justify-content: space-around
+    padding-left: 80px
+    padding-right: 80px
+
+ul li
+  float: left
+
+li a
+  display: block
+  color: $main-color
+  text-align: center
+  font-weight: 700
+  font-size: 16px
+  padding-top: 40px
+  line-height: 53px
+  transition: .3s ease-in-out
+  &:hover
+    text-decoration: none
+    color: $button-and-header-color
+
+.hero img
+  width: 53px
+  height: 53px
+
+.hero-content
+  padding-top: 195px
+  h1
+    text-transform: uppercase
+    font-size: 40px
+    font-weight: 700
+  p
+    font-weight: 600
+    font-size: 18px
+    padding-bottom: 20px
+    padding-top: 13px
+
+.btn-hero
+  background-color: $button-and-header-color
+  border: none
+  width: 166px
+  height: 49px
+  padding: 15px 32px
+  text-decoration: none
+  border-radius: 3px
+  font-size: 100px
+  display: inline-block
+  font-size: 12px
+  font-weight: 700px
+  text-transform: uppercase
+  transition: .3s ease-in-out
+  &:hover
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+    transform: scale(1.1)
+    background-color: $button-hover-color
+
+.social
+  margin-top: 224px
+  .fa
+    display: inline-block
+    font-size: 20px
+    margin-right: 16px
+    transition: .5s ease-in-out
+    padding-bottom: 9px
+    &:last-child
+      margin-right: 0
+    &:hover
+      transform: scale(1.3)
+      cursor: pointer
+
+/*second
+
+.hand-phone
+  background-image: url(../images/Second%20bigger%20ready.jpg)
+  height: 494px
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.second-content
+  padding-top: 105px
+  h6
+    color: $button-and-header-color
+    font-size: 22px
+    font-weight: 700
+    text-transform: uppercase
+    padding-bottom: 45px
+
+.third-content h6
+  color: $button-and-header-color
+  font-size: 22px
+  font-weight: 700
+  text-transform: uppercase
+  padding-bottom: 45px
+
+.second-content p, .third-content p
+  color: $paragraph-text-color
+  font-size: 16px
+  font-weight: 300
+  line-height: 24px
+  padding-bottom: 47px
+
+.coloured-phones
+  padding-top: 150px
+
+.phone
+  max-width: 350px
+  img
+    width: 100%
+
+/*fourth
+
+.small-gallery
+  background-color: $bg-color
+  color: $paragraph-text-color
+  padding-top: 80px
+  padding-bottom: 80px
+  img
+    overflow: hidden
+    width: 100%
+
+.s-g-desc
+  padding-top: 30px
+  text-align: center
+  width: 100%
+  h3
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+    padding-bottom: 24px
+  p
+    font-size: 14px
+    font-weight: 500
+    padding-left: 70px
+    padding-right: 70px
+  img
+    max-width: 60px
+
+/*fifth
+
+.subscribe
+  background-image: url(../images/Fifthy%20big.jpg)
+  height: 790px
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  align-items: center
+  justify-content: center
+
+.subscribe-content h1
+  font-size: 32px
+  font-weight: 700
+  text-transform: uppercase
+  padding-bottom: 30px
+  margin-top: 0
+  text-align: center
+
+.subscribe-element
+  border: none
+  float: left
+  height: 60px
+
+input[type=text]
+  width: 280px
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  font-size: 20px
+  padding-left: 22px
+  font-weight: 500
+  color: $paragraph-text-color
+
+button[type=submit]
+  width: 60px
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  background-color: $button-and-header-color
+  font-size: 20px
+
+form
+  display: flex
+  justify-content: center
+
+/*sixth
+
+.download-it
+  background-color: $bg-color
+  padding-bottom: 50px
+
+.download-it-content
+  padding-top: 61px
+  padding-bottom: 50px
+  text-align: center
+  text-transform: uppercase
+  h2
+    font-size: 22px
+    color: $paragraph-text-color
+    font-weight: 900
+    padding-bottom: 12px
+  p
+    color: $paragraph-text-color
+    font-size: 16px
+    font-weight: 500
+    line-height: 22px
+    padding-left: 220px
+    padding-right: 220px
+    font-weight: 600
+
+.button-container
+  padding-bottom: 50px
+  display: flex
+  justify-content: center
+
+.store-button
+  transition: .3s ease-in-out
+  height: 56px
+  &::before, &::after
+    content: ""
+    clear: both
+    display: table
+  &:hover
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+    transform: scale(1.1)
+    cursor: pointer
+
+.store-name
+  width: 240px
+  float: left
+  border-bottom-left-radius: 3px
+  border-top-left-radius: 3px
+  background-color: $bg-store-button-color-bigger
+  p
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 56px
+    padding-left: 24px
+    margin: 0
+
+.store-icon
+  width: 56px
+  float: left
+  border-bottom-right-radius: 3px
+  border-top-right-radius: 3px
+  background-color: $button-and-header-color
+  text-align: center
+  .fa
+    font-size: 24px
+    line-height: 56px
+
+/*footer
+
+.footer-info
+  color: $paragraph-text-color
+  font-size: 16px
+  line-height: 16px
+  font-weight: 700
+  padding: 50px 0
+  a
+    display: inline-block
+    border-right: 3px solid
+    border-color: $button-and-header-color
+    padding-right: 3px
+    text-decoration: none
+    color: $paragraph-text-color
+    font-size: 16px
+    line-height: 16px
+    text-transform: uppercase
+    &:hover
+      color: $footer-link-hover
+      cursor: pointer
+    &:last-of-type
+      border-right: none
+      padding-right: 0
+  p
+    padding-top: 15px
+    margin: 0
+
+.footer-cam
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  height: 147px
+  img
+    height: 55px
+    width: 53px
+
+/*media queries
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+  /*fourth
+  .s-g-desc
+    padding-top: 20px
+    padding-bottom: 0
+    p
+      padding-left: 0px
+      padding-right: 0px
+    h3
+      padding-bottom: 10px
+
+/* Small devices (tablets, 768px and up)
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+  /*second
+  .second-content
+    padding-top: 60px
+    padding-right: 200px
+  /*third
+  .third-content
+    padding: 60px 100px 60px 100px
+    text-align: center
+  .coloured-phones
+    padding-top: 60px
+  .phone
+    max-width: 350px
+    margin: 0 auto
+  /*fourth
+  .small-gallery
+    padding-top: 20px
+  .s-g-desc
+    padding-bottom: 50px
+  /*sixth
+  .download-it-content p
+    padding-left: 100px
+    padding-right: 100px
+  /*footer
+  .footer-info
+    text-align: center
+    padding-bottom: 10px
+  .footer-cam
+    justify-content: center
+
+/* extra small devices
+
+@media screen and (max-width: 767px)
+  /*first
+  .hero ul
+    display: block
+    padding-left: 0px
+    padding-right: 0px
+  ul li
+    float: none
+  li a
+    padding-top: 0px
+  .hero img
+    display: none
+  .hero-content
+    padding-top: 52px
+    h1
+      font-size: 26px
+    p
+      padding-top: 50px
+      font-size: 18px
+  /*second
+  .hand-phone
+    background-image: none
+    background-color: $bg-color
+  .second-content
+    padding-top: 60px
+    text-align: center
+  .third-content
+    padding: 60px 0
+    text-align: center
+  .coloured-phones
+    padding-top: 60px
+  .phone
+    margin: 0 auto
+  /*fourth
+  .small-gallery
+    padding-top: 20px
+  .s-g-desc
+    padding-bottom: 50px
+  /*fifth
+  .subscribe-content h1
+    font-size: 22px
+  input[type=text]
+    width: 200px
+  /*sixth
+  .download-it
+    background-color: $bg-color
+  .download-it-content p
+    padding-left: 0px
+    padding-right: 0px
+    font-weight: 600
+  .store-name
+    width: 160px
+  /*footer
+  .footer-info
+    text-align: center
+    padding-bottom: 10px
+    a
+      display: block
+      border-right: none
+      padding-right: 0px
+      font-size: 18px
+      line-height: 24px
+  .footer-cam
+    justify-content: center
